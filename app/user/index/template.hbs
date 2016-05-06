@@ -1,0 +1,10 @@
+<h4>User Listing</h4>
+
+<ul>
+{{#each model as |person|}}
+    <li>{{person.name}}</li>    
+{{/each}}
+</ul>
+<br/>
+
+{{#link-to "user.new" class="btn btn-primary"}} New User{{/link-to}}
